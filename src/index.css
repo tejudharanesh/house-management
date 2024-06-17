@@ -861,8 +861,8 @@ ul {
 }
 
 .listingImg {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   border-radius: 2px;
   margin: 1px;
 }
@@ -877,7 +877,7 @@ ul {
 }
 @media (min-width: 800px) {
   .listingImg {
-    width: 350px;
+    width: 320px;
     height: 250px;
     border-radius: 10px;
     margin: 8px;
