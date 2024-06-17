@@ -76,7 +76,12 @@ button {
   cursor: pointer;
   position: absolute;
   top: -1%;
-  right: 55%;
+  right: 0%;
+}
+@media (min-width: 1024px) {
+  .removeIcon {
+    right: 49%;
+  }
 }
 
 .editIcon {
@@ -338,12 +343,19 @@ button {
 }
 
 .swiperSlideImg {
-  min-height: 300px;
+  min-height: 200px;
   height: 15vw;
   width: 100%;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   object-fit: cover;
   margin: 0 auto;
+}
+@media (min-width: 1024px) {
+  .swiperSlideImg {
+    width: 100%;
+    height: 20vw;
+    padding: auto;
+  }
 }
 
 .swiperSlideTextDiv {
@@ -361,35 +373,36 @@ button {
 .swiperSlideText {
   color: #080808;
   position: absolute;
-  top: 70px;
-  left: 0;
+  top: 10%;
+  left: 0%;
   font-weight: 400;
   max-width: 90%;
-  font-size: 1rem;
+  font-size: 0.6rem;
   background-color: rgba(243, 243, 243, 0.8);
   padding: 0.5rem;
   border-radius: 1rem;
 }
 @media (min-width: 1024px) {
   .swiperSlideText {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 .swiperSlidePrice {
   color: #241d1d;
   position: absolute;
-  top: 120px;
-  left: 11px;
+  top: 28%;
+  left: 0%;
   font-weight: 300;
-  max-width: 90%;
+  font-size: 0.6rem;
+
   background-color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 1rem;
 }
 @media (min-width: 1024px) {
   .swiperSlidePrice {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 }
 
@@ -412,7 +425,7 @@ button {
 
 .exploreCategoryName {
   font-weight: 500;
-  text-align: left;
+  text-align: center;
 }
 
 .category {
@@ -841,4 +854,32 @@ button {
   margin-left: 1rem;
   font-size: 0.8rem;
   opacity: 0.75;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.listingImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+  margin: 3px;
+}
+
+@media (min-width: 376px) {
+  .listingImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+}
+@media (min-width: 800px) {
+  .listingImg {
+    width: 400px;
+    height: 270px;
+    border-radius: 10px;
+    margin: 8px;
+  }
 }

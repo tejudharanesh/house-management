@@ -49,23 +49,18 @@ function CreateListing() {
 
   const auth = getAuth();
   const navigate = useNavigate();
-  const isMounted = useRef(true);
 
   useEffect(() => {
-    if (isMounted) {
-      onAuthStateChanged(auth, (user) => {
-        if (user) {
-          setFormData({ ...formData, userRef: user.uid });
-        } else {
-          navigate("/sign-in");
-        }
-      });
-    }
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setFormData((prevFormData) => ({ ...prevFormData, userRef: user.uid }));
+      } else {
+        navigate("/sign-in");
+      }
+    });
 
-    return () => {
-      isMounted.current = false;
-    };
-  }, [isMounted]);
+    return () => unsubscribe();
+  }, [auth, navigate]);
 
   const onSubmit = async (e) => {
     e.preventDefault();

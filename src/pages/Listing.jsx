@@ -40,16 +40,7 @@ function Listing() {
     <main>
       {listing.imgUrl.map((url, index) => (
         <div className="swiperSlideDiv">
-          <img
-            src={url}
-            alt={url}
-            style={{
-              width: "400px",
-              height: "270px",
-              borderRadius: "10px",
-              margin: "8px",
-            }}
-          />
+          <img className="listingImg" src={url} alt={url} />
         </div>
       ))}
       {/* <Swiper

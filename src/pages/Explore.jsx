@@ -7,10 +7,6 @@ import Slider from "../components/Slider";
 function Explore() {
   return (
     <div className="explore">
-      <header>
-        <p className="pageHeader">Explore</p>
-      </header>
-
       <main>
         <Slider />
         <p className="exploreCategoryHeading">Categories</p>
