@@ -861,10 +861,10 @@ ul {
 }
 
 .listingImg {
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  margin: 1px;
+  width: 30vh;
+  height: 20vh;
+  border-radius: 3px;
+  margin: 2px;
 }
 
 @media (min-width: 376px) {
