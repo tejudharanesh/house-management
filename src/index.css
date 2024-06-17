@@ -867,7 +867,7 @@ ul {
   margin: 2px;
 }
 
-@media (min-width: 376px) {
+@media (min-width: 250px) {
   .listingImg {
     width: 200px;
     height: 200px;
